@@ -1,0 +1,120 @@
+<!-- ## Option Two: Word Guess Game (Challenge - Recommended)
+
+1. [Watch the demo](https://youtu.be/W-IJcC4tYFI).
+
+2. Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
+
+3. Use key events to listen for the letters that your players will type.
+
+4. Display the following on the page:
+
+5. Press any key to get started!
+
+6. Wins: (# of times user guessed the word correctly).
+
+   * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
+
+   * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
+
+7. Number of Guesses Remaining: (# of guesses remaining for the user).
+
+8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
+
+9. After the user wins/loses the game should automatically choose another word and make the user play it. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word-Guess Game, Homework</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!-- jumbotron with title -->
+    <div class="jumbotron">
+        <h1 class="display-4" style="text-align: center">Hangman Game</h1>
+        <hr class="my-4">
+        <p style="text-align:center">Can you guess some of Leslie Knope's favorite things?</p>
+    </div>
+
+<!--words to guess container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Words to Guess:</h4>
+                <div class="row">
+                    <div class="col-md-12" style="border: solid black 1px">
+                        <p>_ _ _ _</p><!-- code where placeholders for word will be and resulting letters as player guesses them -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- wrong guesses container -->
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Wrong Guesses:</h4>
+                <div class="row">
+                    <div class="col-md-12" style="border: solid black 1px">
+                        <p>#</p><!-- code to track user losses -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- guesses remaining counter container -->
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Remaining Guesses:</h4>
+                <div class="row">
+                    <div class="col-md-12" style="border: solid black 1px">
+                        <p>#</p><!-- code to track user losses -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- games won counter container -->
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Games Won:</h4>
+                <div class="row">
+                    <div class="col-md-12" style="border: solid black 1px">
+                        <p>#</p><!-- code to track user losses -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- games lost counter container -->
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Games Lost:</h4>
+                <div class="row">
+                    <div class="col-md-12" style="border: solid black 1px">
+                        <p>#</p><!-- code to track user losses -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
