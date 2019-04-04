@@ -40,77 +40,53 @@
         <p style="text-align:center">Can you guess some of Leslie Knope's favorite things?</p>
     </div>
 
-<!--words to guess container -->
+<!--words to guess container (has header in example) -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Words to Guess:</h4>
-                <div class="row">
-                    <div class="col-md-12" style="border: solid black 1px">
-                        <p>_ _ _ _</p><!-- code where placeholders for word will be and resulting letters as player guesses them -->
-                    </div>
-                </div>
+        <div class="card">
+            <div class="card-header">
+                Words to Guess:
             </div>
-        </div>
+                <div class="card-body">
+                    <p>_ _ _ _</p> <!-- code where placeholders for word will be and resulting letters as player guesses them -->
+                </div>
     </div>
 
 
 <!-- wrong guesses container -->
-<div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Wrong Guesses:</h4>
-                <div class="row">
-                    <div class="col-md-12" style="border: solid black 1px">
-                        <p>#</p><!-- code to track user losses -->
-                    </div>
-                </div>
-            </div>
+    <div class="card">
+        <div class="card-body">
+            <p>Wrong Guesses: A,E,O,U</p>
+            <!-- code to track incorrect letters that have been guessed -->
         </div>
     </div>
 
 <!-- guesses remaining counter container -->
-<div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Remaining Guesses:</h4>
-                <div class="row">
-                    <div class="col-md-12" style="border: solid black 1px">
-                        <p>#</p><!-- code to track user losses -->
-                    </div>
-                </div>
-            </div>
+    <div class="card">
+        <div class="card-body">
+            <p>Remaining Guesses:</p>
+            <p>#</p>
+            <!-- code to track # of guesses remaining-->
         </div>
     </div>
+
 
 <!-- games won counter container -->
-<div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Games Won:</h4>
-                <div class="row">
-                    <div class="col-md-12" style="border: solid black 1px">
-                        <p>#</p><!-- code to track user losses -->
-                    </div>
-                </div>
-            </div>
+    <div class="card">
+        <div class="card-body">
+            <p>Games Won:</p>
+            <p>#</p>
+            <!-- code to track # of games user has won-->
         </div>
     </div>
 
-
 <!-- games lost counter container -->
-<div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Games Lost:</h4>
-                <div class="row">
-                    <div class="col-md-12" style="border: solid black 1px">
-                        <p>#</p><!-- code to track user losses -->
-                    </div>
-                </div>
-            </div>
+    <div class="card">
+        <div class="card-body">
+            <p>Games lost:</p>
+            <p>#</p>
+            <!-- code to track # of games user has lost-->
         </div>
-    </div>   
+    </div> 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
